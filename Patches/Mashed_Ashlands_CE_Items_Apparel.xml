@@ -1,0 +1,1238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Apparel: respirator-style shell helmet -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases</xpath>
+			<value>
+				<Bulk>3</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>3</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/WornBulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases</xpath>
+			<value>
+				<WornBulk>1</WornBulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/WornBulk</xpath>
+			<value>
+				<WornBulk>1</WornBulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/ArmorRating_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases</xpath>
+			<value>
+				<ArmorRating_Sharp>3</ArmorRating_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/ArmorRating_Sharp</xpath>
+			<value>
+				<ArmorRating_Sharp>3</ArmorRating_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/ArmorRating_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases</xpath>
+			<value>
+				<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/statBases/ArmorRating_Blunt</xpath>
+			<value>
+				<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]/equippedStatOffsets</xpath>
+		<value>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CephalopodHelmet"]</xpath>
+		<value>
+			<li Class="CombatExtended.ApparelHediffExtension">
+				<hediff>WearingGasMask</hediff>
+			</li>
+		</value>
+	</Operation>
+	<!-- Stuff and buildable materials -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ParasolWoodLog"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ParasolWoodLog"]/statBases</xpath>
+			<value>
+				<Bulk>1</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ParasolWoodLog"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>1</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ParasolWoodLog"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>log</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.025</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.025</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KreshCloth"]/stuffProps/categories</xpath>
+		<value>
+			<li>SoftArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.35</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.35</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_StriderChitin"]/stuffProps/categories</xpath>
+		<value>
+			<li>Metallic_Weapon</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]</xpath>
+			<value>
+				<statBases>
+					<Bulk>0.1</Bulk>
+				</statBases>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/Bulk</xpath>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases</xpath>
+				<value>
+					<Bulk>0.1</Bulk>
+				</value>
+			</nomatch>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/Bulk</xpath>
+				<value>
+					<Bulk>0.1</Bulk>
+				</value>
+			</match>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_PurpleCrystalShard"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.014</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_DurzogLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.014</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.04</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.04</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.02</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.02</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.01</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.01</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_CliffRacerLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.06</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.06</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.04</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_FungalLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.075</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.075</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.025</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_GuarLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.025</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.11</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.11</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.07</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.07</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.03</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_HeavyScaledLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.03</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.16</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.16</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_InfernalScaledLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.12</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.09</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.09</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_KwamaChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.06</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.09</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.09</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.055</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.055</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.10</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.10</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.035</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixLeather"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.035</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.11</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.11</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.05</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.05</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/WornBulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases</xpath>
+			<value>
+				<WornBulk>0.25</WornBulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/WornBulk</xpath>
+			<value>
+				<WornBulk>0.25</WornBulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.08</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.08</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.07</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidSilk"]/stuffProps/categories</xpath>
+		<value>
+			<li>SoftArmor</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.06</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.08</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.08</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.06</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkChitin"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases</xpath>
+			<value>
+				<Bulk>0.04</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.04</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicEbony"]/stuffProps/statFactors</xpath>
+		<value>
+			<MeleePenetrationFactor>1.1</MeleePenetrationFactor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_MetallicBase"]/stuffProps/categories</xpath>
+		<value>
+			<li>Metallic_Weapon</li>
+			<li>Steeled</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases</xpath>
+			<value>
+				<Bulk>0.02</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.02</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_VolcanicGlass"]/stuffProps/statFactors</xpath>
+		<value>
+			<MeleePenetrationFactor>1.15</MeleePenetrationFactor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/Bulk</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases</xpath>
+			<value>
+				<Bulk>0.1</Bulk>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/Bulk</xpath>
+			<value>
+				<Bulk>0.1</Bulk>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Sharp</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Sharp</xpath>
+			<value>
+				<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Blunt</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Blunt</xpath>
+			<value>
+				<StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Heat</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Mashed_Ashlands_BlocksBasalt"]/statBases/StuffPower_Armor_Heat</xpath>
+			<value>
+				<StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+			</value>
+		</match>
+	</Operation>
+</Patch>

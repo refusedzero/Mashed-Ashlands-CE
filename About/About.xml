@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>CE Compatibility - Mashed's Ashlands</name>
+  <author>refusedzero</author>
+  <modVersion>1.0.0</modVersion>
+  <packageId>refusedzero.mashedashlands.ce</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>SirMashedPotato.Ashlands</packageId>
+      <displayName>Mashed's Ashlands</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3109835541</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>CETeam.CombatExtended</packageId>
+      <displayName>Combat Extended</displayName>
+      <downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>SirMashedPotato.Ashlands</li>
+    <li>CETeam.CombatExtended</li>
+  </loadAfter>
+  <incompatibleWith>
+    <li>brian.mashedashlands.ce</li>
+  </incompatibleWith>
+  <description>Combat Extended compatibility patch for Mashed's Ashlands. Covers core and DLC animal races with CE body-shape metadata, complete natural ToolCE lists, natural armor coverage, and conservative combat tuning. Also covers CE material and apparel stats, the cephalopod respirator helmet, the parasol log tool, and the three Daedroth bloom projectiles.</description>
+</ModMetaData>

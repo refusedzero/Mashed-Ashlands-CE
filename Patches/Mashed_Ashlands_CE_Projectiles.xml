@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- All three Daedroth bloom projectiles inherit this shared lobbed explosive parent. -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="Mashed_Ashlands_LobThrownBase"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/ThingDef[@ParentName="Mashed_Ashlands_LobThrownBase"]/projectile</xpath>
+		<attribute>Class</attribute>
+		<value>CombatExtended.ProjectilePropertiesCE</value>
+	</Operation>
+
+</Patch>

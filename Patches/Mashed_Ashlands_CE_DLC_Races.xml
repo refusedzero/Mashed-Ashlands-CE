@@ -1,0 +1,922 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+	<!-- Biotech load-folder animals -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_AshHopperGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_AshHopperGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_AshHopperGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_AshHopperGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_MudcrabGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_MudcrabGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_MudcrabGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>pincers</label>
+									<capacities>
+										<li>Bite</li>
+										<li>Mashed_Ashlands_SwampBite</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_MudcrabGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>pincers</label>
+									<capacities>
+										<li>Bite</li>
+										<li>Mashed_Ashlands_SwampBite</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>Humanoid</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>8</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>5.2</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>tentacle</label>
+									<capacities>
+										<li>ScratchToxic</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NetchGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>8</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>5.2</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>tentacle</label>
+									<capacities>
+										<li>ScratchToxic</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_TentacleAttackTool</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixHoundGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>Quadruped</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixHoundGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixHoundGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>left claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>14</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>14</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>proboscis</label>
+									<capacities>
+										<li>Mashed_Ashlands_DrainingStab</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<chanceFactor>0.9</chanceFactor>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>9</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.2</chanceFactor>
+									<armorPenetrationBlunt>5.85</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixHoundGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>left claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>14</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>14</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.3</armorPenetrationSharp>
+									<armorPenetrationBlunt>1</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>proboscis</label>
+									<capacities>
+										<li>Mashed_Ashlands_DrainingStab</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<chanceFactor>0.9</chanceFactor>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>14</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>9</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.2</chanceFactor>
+									<armorPenetrationBlunt>5.85</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>Quadruped</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>3.25</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixOxGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>3.25</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixSteedGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>Quadruped</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixSteedGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixSteedGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>3.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>left claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_NixSteedGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2.6</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<armorPenetrationBlunt>3.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>left claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+									<chanceFactor>0.5</chanceFactor>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>left pedipalp</label>
+									<labelNoLocation>pedipalp</labelNoLocation>
+									<capacities>
+										<li>Cut</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_RightPedipalpAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.7</chanceFactor>
+									<armorPenetrationSharp>0.4</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right pedipalp</label>
+									<labelNoLocation>pedipalp</labelNoLocation>
+									<capacities>
+										<li>Cut</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_LeftPedipalpAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.7</chanceFactor>
+									<armorPenetrationSharp>0.4</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_RachnoidGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>left pedipalp</label>
+									<labelNoLocation>pedipalp</labelNoLocation>
+									<capacities>
+										<li>Cut</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_RightPedipalpAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.7</chanceFactor>
+									<armorPenetrationSharp>0.4</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>right pedipalp</label>
+									<labelNoLocation>pedipalp</labelNoLocation>
+									<capacities>
+										<li>Cut</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mashed_Ashlands_LeftPedipalpAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.7</chanceFactor>
+									<armorPenetrationSharp>0.4</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.25</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_SandcrabGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_SandcrabGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_SandcrabGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>pincers</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>2</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_SandcrabGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>pincers</label>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>2</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.2</armorPenetrationSharp>
+									<armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkGlowing"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkGlowing"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkGlowing"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>Bite</li>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_ShalkGlowing"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>Bite</li>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>5</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Toxbug"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Toxbug"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Toxbug"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Toxbug"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+									<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+								</li>
+								<li Class="CombatExtended.ToolCE">
+									<label>mandibles</label>
+									<capacities>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<armorPenetrationSharp>0.5</armorPenetrationSharp>
+									<armorPenetrationBlunt>1.75</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<!-- Odyssey load-folder animals -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Shieldcrab"]</xpath>
+					<value>
+						<li Class="CombatExtended.RacePropertiesExtensionCE">
+							<bodyShape>QuadrupedLow</bodyShape>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Shieldcrab"]/tools</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Shieldcrab"]</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>2</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<armorPenetrationBlunt>1.3</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Mashed_Ashlands_Shieldcrab"]/tools</xpath>
+						<value>
+							<tools Inherit="False">
+								<li Class="CombatExtended.ToolCE">
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>2</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<armorPenetrationBlunt>1.3</armorPenetrationBlunt>
+								</li>
+							</tools>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

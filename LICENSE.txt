@@ -1,0 +1,22 @@
+CE Compatibility - Mashed's Ashlands
+Copyright 2026 refusedzero
+
+The original compatibility-patch files in this package, including its XML
+patches and About/ModIcon.png (the refusedzero maker mark), are licensed under
+the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+license (CC BY-NC-SA 4.0):
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Mashed's Ashlands and Combat Extended remain the work of their respective
+creators. They are not redistributed or relicensed by this package.
+
+ART EXCLUSION
+
+Except for About/ModIcon.png, no artwork is licensed by this file.
+About/Preview.png and any screenshots, promotional images, animations, or
+third-party assets remain subject to the rights and permissions of their
+respective rights holders.
+
+This package may be shared or adapted only under the license terms above,
+including attribution, noncommercial use, and share-alike distribution.
