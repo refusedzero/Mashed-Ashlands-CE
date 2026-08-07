@@ -2331,7 +2331,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/statBases</xpath>
     <value>
-      <MeleeDodgeChance>1</MeleeDodgeChance>
+      <MeleeDodgeChance>0.20</MeleeDodgeChance>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -2343,7 +2343,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Mashed_Ashlands_Scamp"]/statBases</xpath>
     <value>
-      <MeleeParryChance>1</MeleeParryChance>
+      <MeleeParryChance>0.01</MeleeParryChance>
     </value>
   </Operation>
 
