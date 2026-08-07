@@ -1,4 +1,4 @@
-![Mashed's Ashlands: CE Compatibility](https://images.steamusercontent.com/ugc/13929729713683684569/B4B9833C1F7BF73641165752C8CFE5D826D95350/)
+![Mashed's Ashlands: CE Compatibility](https://images.steamusercontent.com/ugc/16036578606447674073/B4B9833C1F7BF73641165752C8CFE5D826D95350/)
 
 # Mashed's Ashlands: CE Compatibility
 
@@ -8,7 +8,7 @@
 
 Mashed's Ashlands is weird in all the right ways: flying dinosaur looking nuisances, volcanic beasts, strange new materials, helmets for escaping toxic ash clouds, and Daedroths with weaponized gardening. This patch teaches Combat Extended how to handle all of this Morrowind awesomeness without sanding off what makes it fun.
 
-![Mashed Ashlands creatures in game](https://images.steamusercontent.com/ugc/18143154929712740710/B2F8F16E5E43B1DA81C1809A672E403C51189FFA/)
+![Mashed Ashlands creatures in game](https://images.steamusercontent.com/ugc/15129495821715122801/C3A749290119C24FE48F8337994CA25EFAA49A89/)
 
 ## Creatures that fight like themselves
 
@@ -24,7 +24,7 @@ Firebloom, Shockbloom, and Toxbloom travel through CE's projectile system while 
 
 ## Gear from the Ashlands
 
-![Mashed Ashlands materials and helmet in game](https://images.steamusercontent.com/ugc/10371527158529241030/569C4715BA3D42460DF85CAB04E36F34D49744E1/)
+![Mashed Ashlands materials and helmet in game](https://images.steamusercontent.com/ugc/17674244428874731138/BD94483ECBD43EB1179406A805CD4CB543FFD6C3/)
 
 - 19 material and buildable definitions receive CE bulk, armor, and material behavior.
 - The Cephalopod Helmet has the right stats now and blocks CE black smoke.
