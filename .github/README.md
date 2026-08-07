@@ -1,6 +1,8 @@
-![CE Compatibility - Mashed's Ashlands](https://images.steamusercontent.com/ugc/13929729713683684569/B4B9833C1F7BF73641165752C8CFE5D826D95350/)
+![Mashed's Ashlands: CE Compatibility](https://images.steamusercontent.com/ugc/13929729713683684569/B4B9833C1F7BF73641165752C8CFE5D826D95350/)
 
-# Ashlands, meet Combat Extended
+# Mashed's Ashlands: CE Compatibility
+
+**Ashlands, meet Combat Extended.**
 
 **RimWorld 1.6 | Version 1.0.0**
 

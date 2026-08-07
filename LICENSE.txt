@@ -1,4 +1,4 @@
-CE Compatibility - Mashed's Ashlands
+Mashed's Ashlands: CE Compatibility
 Copyright 2026 refusedzero
 
 The original compatibility-patch files in this package, including its XML
