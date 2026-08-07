@@ -25,7 +25,7 @@ Firebloom, Shockbloom, and Toxbloom travel through CE's projectile system while 
 ![Mashed Ashlands materials and helmet in game](https://images.steamusercontent.com/ugc/10371527158529241030/569C4715BA3D42460DF85CAB04E36F34D49744E1/)
 
 - 19 material and buildable definitions receive CE bulk, armor, and material behavior.
-- The Cephalopod Helmet now works with CE's black smoke.
+- The Cephalopod Helmet has the right stats now and blocks CE black smoke.
 - Parasol wood remains a modest improvised melee option instead of becoming a surprise superweapon.
 
 ## Built carefully, tested by hitting things
