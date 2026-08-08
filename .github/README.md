@@ -12,8 +12,6 @@ Mashed's Ashlands is weird in all the right ways: flying dinosaur looking nuisan
 
 ## Creatures that fight like themselves
 
-![Creature combat](https://images.steamusercontent.com/ugc/9305265853404150615/39B953138879242FAA761D6840BFB948D7452C59/)
-
 - 36 core races receive CE body shapes, natural armor, and CE-aware attacks.
 - 11 Biotech and Odyssey variants join in only when their DLC content is active.
 - Source attack labels, cooldowns, body groups, sounds, and special effects stay where they belong.
@@ -31,8 +29,6 @@ Firebloom, Shockbloom, and Toxbloom travel through CE's projectile system while 
 - Parasol wood remains a modest improvised melee option instead of becoming a surprise superweapon.
 
 ## Built carefully, tested by hitting things
-
-![Built carefully](https://images.steamusercontent.com/ugc/13993166438617432888/D893F23FFF73C8F643609897C6FEBE1D105408EA/)
 
 We spawned the creatures, made them fight, fired the blooms, checked the DLC variants, inspected the gear, and followed the logs whenever something looked wrong. This mod went through exhaustive testing.
 
